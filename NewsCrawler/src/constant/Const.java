@@ -4,8 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Const {
-	private static final String XINHUA_LIST_URL = "http://xh.xhby.net/newxh/html/DATE/node_1.htm";
-	private static final String XINHUA_NEWS_URL = "http://xh.xhby.net/newxh/html/DATE/SUBURL";
+	private static final String XINHUA_LIST_URL = "http://xh.xhby.net/mp2/html/DATE/node_1.htm";
+	private static final String XINHUA_NEWS_URL = "http://xh.xhby.net/mp2/html/DATE/SUBURL";
 
 	public static String XINHUA_LIST_URL(Date date) {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM/dd");
