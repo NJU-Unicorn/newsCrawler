@@ -44,6 +44,8 @@ public class Sample {
 	
 	public static void main(String[] args) {
 		Sample s = new Sample(Sample.XINHUA);
-		s.showAllNews();
+		HashMap<String,String> query = new HashMap<String,String>();
+		query.put("date", "2009-06-17");
+		s.showNews(query);
 	}
 }
