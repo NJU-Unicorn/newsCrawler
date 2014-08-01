@@ -23,7 +23,7 @@ public class LogHelper {
 					new FileOutputStream("tmp"), "utf-8"));
 			bfw.write(year + "\r\n");
 			bfw.write(month + "\r\n");
-			bfw.write(day);
+			bfw.write(day + "\r\n");
 			bfw.close();
 		} catch (IOException e) {
 			e.printStackTrace();
