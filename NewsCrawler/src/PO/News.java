@@ -12,6 +12,21 @@ public class News {
 	public String subTitle = "";
 	public String content = "";
 
+	
+	public News() {
+		
+	}
+	
+	public News(DBObject o) {
+		nid = o.get("news_id").toString();
+		url = o.get("url").toString();
+		date = o.get("date").toString();
+		layout = o.get("layout").toString();
+		title = o.get("title").toString();
+		subTitle = o.get("subTitle").toString();
+		content = o.get("content").toString();
+	}
+
 	@Override
 	public String toString() {
 		return "id=" + nid + "\nurl=" + url + "\ndate=" + date + "\nlayout="
