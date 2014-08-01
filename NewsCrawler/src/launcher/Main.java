@@ -10,11 +10,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-import constant.Const;
 import logic.Crawler;
 import logic.NewXinhuaCrawler;
 import logic.OldXinhuaCrawler;
 import PO.News;
+import constant.Const;
 
 public class Main {
 
@@ -63,7 +63,9 @@ public class Main {
 				continue;
 			}
 			calendar.add(GregorianCalendar.DAY_OF_MONTH, -1);
-			LogHelper.logThis(year, month, day);
+			LogHelper.logThis(calendar.get(GregorianCalendar.YEAR),
+					calendar.get(GregorianCalendar.MONTH),
+					calendar.get(GregorianCalendar.DAY_OF_MONTH));
 		}
 	}
 

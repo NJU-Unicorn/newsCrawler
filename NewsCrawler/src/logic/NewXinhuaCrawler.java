@@ -89,7 +89,7 @@ public class NewXinhuaCrawler implements Crawler {
 				contentTxt = contentTxt.replaceAll("上接[0-9]*版", "").replaceAll(
 						"下转[0-9]*版", "");
 				news.content = contentTxt.trim();
-				System.out.println(news.content);
+//				System.out.println(news.content);
 
 				System.out.print(news.date + "-" + news.title);
 				if (news.title.equals("") || news.content.equals("")) {

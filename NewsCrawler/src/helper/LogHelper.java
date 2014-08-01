@@ -17,10 +17,11 @@ public class LogHelper {
 		}
 	}
 
-	public static void logThis(int year,int month,int day) {
+	public static void logThis(int year, int month, int day) {
 		try {
 			BufferedWriter bfw = new BufferedWriter(new OutputStreamWriter(
 					new FileOutputStream("tmp"), "utf-8"));
+			System.out.println("=========log" + year + month +day);
 			bfw.write(year + "\r\n");
 			bfw.write(month + "\r\n");
 			bfw.write(day + "\r\n");
